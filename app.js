@@ -8,4 +8,4 @@ app.get('/',(req,res)=>{
 })
 
 //Start listening to the server
-app.listen(3001);
+app.listen(3000);
