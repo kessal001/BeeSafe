@@ -216,13 +216,13 @@ th {
  padding:0
 }
 ::-moz-selection {
- background:#0c0c0c;
+ background:#ffffff;
 }
 ::selection {
- background:#0c0c0c;
+ background:#ffffff;
 }
 ::-moz-selection {
- background:#0c0c0c;
+ background:#ffffff;
 }
 img::-moz-selection {
  background:transparent
@@ -1421,13 +1421,13 @@ body {
  padding:0 0 5px 0;
  background-color:transparent;
  border:none;
- border-bottom:1px solid #0c0c0c;
+ border-bottom:1px solid #f2f920;
  border-radius:0
 }
 .work-request--information input[type="text"]:focus,
 .work-request--information input[type="email"]:focus {
  outline:none;
- background-color:#0c0c0c
+ background-color:#f2f920;
 }
 .work-request--information label {
  position:absolute;

@@ -27,4 +27,4 @@ mongoose.connect(process.env.DB_CONNECTION,()=>{
     console.log("Connected to the DB");
 })
 //Start listening to the server
-app.listen(3000, '192.168.1.52');
+app.listen(3000);
