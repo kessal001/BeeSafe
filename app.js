@@ -16,9 +16,10 @@ const postRoute = require("./routes/posts");
 const donationRoute = require("./routes/donations");
 app.use("/posts",postRoute);
 app.use("/donations",donationRoute);
+app.use(express.static("./home"));
 //ROUTES
 app.get('/',(req,res)=>{
-    res.send("We are on home!");
+    res.sendFile("./home/index.html");
 })
 
 //Connect To DB
@@ -26,4 +27,4 @@ mongoose.connect(process.env.DB_CONNECTION,()=>{
     console.log("Connected to the DB");
 })
 //Start listening to the server
-app.listen(3000);
+app.listen(3000, '192.168.1.52');
