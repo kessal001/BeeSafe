@@ -19,7 +19,7 @@ app.use("/donations",donationRoute);
 app.use(express.static("./home"));
 //ROUTES
 app.get('/',(req,res)=>{
-    res.sendFile("./home/index.html");
+    res.sendFile("./index.html");
 })
 
 //Connect To DB
@@ -28,3 +28,13 @@ mongoose.connect(process.env.DB_CONNECTION,()=>{
 })
 //Start listening to the server
 app.listen(3000);
+app.get('/login',(req,res)=>{
+    res.sendFile("login.html", { root: './home' })
+})
+
+app.use(express.urlencoded());
+
+/** Process POST request */
+app.post('/', function (req, res, next) {
+  res.send(JSON.stringify(req.body));
+});
