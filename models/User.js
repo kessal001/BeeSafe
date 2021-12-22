@@ -6,13 +6,13 @@ const UserSchema = mongoose.Schema({
         type: String,
         required: true
     },
-    description: {
+    password: {
         type: String,
         required: true
     },
-    date: {
-        type: Date,
-        default: Date.now
+    mail: {
+        type: String,
+        required: true
     }
 });
 
