@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const axios = require('axios');
-
+const isLogged = false;
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 app.use(bodyParser.json());
@@ -22,7 +22,7 @@ app.use("/users",userRoute);
 app.use(express.static("./home"));
 //ROUTES
 app.get('/',(req,res)=>{
-    res.sendFile("./index.html");
+      res.sendFile("./index.html");
 })
 
 //Connect To DB

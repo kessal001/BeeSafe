@@ -76,7 +76,8 @@
                   is definitely worrying and the effects also on humans risk being catastrophic.
 
                   <br><br>
-                  <corsivo style="font-style: oblique; color: #000; font-weight: bold;">Who will the money go to?</corsivo><br>
+                  <corsivo style="font-style: oblique; color: #000; font-weight: bold;">Who will the money go to?
+                  </corsivo><br>
                   The money donated will go entirely to the partner beekeepers of the project
                   <br><br>
                   <corsivo style="font-style: oblique; color: #000; font-weight: bold;">What will you get?</corsivo><br>
@@ -90,7 +91,7 @@
                   <input type="image"
                     src="https://pics.paypal.com/00/s/MDZmMWUxOTQtOGQxNS00MWZhLTk0NzQtMzg1NTA4ODc2MGU5/file.PNG"
                     border="0" name="submit" title="PayPal - The safer, easier way to pay online!"
-                    alt="Donate with PayPal button" />
+                    alt="Donate with PayPal button" onclick="myFunction()" />
                   <img alt="" border="0" src="https://www.paypal.com/en_IT/i/scr/pixel.gif" width="1" height="1" />
                 </form>
 
@@ -101,7 +102,7 @@
               <div class="about">
                 <div class="about--banner">
                   <h2>We<br>believe in<br>passionate<br>people</h2>
-                  <a href="#0">Career
+                  <a href="http://www.linkedin.com/in/luca-pedersoli-820009202">Career
                     <span>
                       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118"
@@ -113,24 +114,16 @@
                       </svg>
                     </span>
                   </a>
-                  <img src="assets/img/about-visual.png" alt="About Us">
+                  <img src="assets/img/me.png" alt="About Us" style="height: 100%; margin-bottom: 120px; opacity: 0.5;">
                 </div>
                 <div class="about--options">
-                  <a href="#0">
-                    <h3>Winners</h3>
-                  </a>
-                  <a href="#0">
-                    <h3>Philosophy</h3>
-                  </a>
-                  <a href="#0">
-                    <h3>History</h3>
-                  </a>
+
                 </div>
               </div>
             </li>
             <li class="l-section section">
               <div class="hire">
-                <h2>You want us to do</h2>
+                <h2>Contact us</h2>
                 <!-- checkout formspree.io for easy form setup -->
                 <form class="work-request">
                   <div class="work-request--options">
@@ -138,13 +131,20 @@
                   <div class="work-request--information">
                     <div class="information-name">
                       <input id="name" type="text" spellcheck="false">
-                      <label for="name">Name</label>
+                      <label for="name" style="width: 100%; text-align: center;">Name</label>
                     </div>
                     <div class="information-email">
                       <input id="email" type="email" spellcheck="false">
-                      <label for="email">Email</label>
+                      <label for="email" style="width: 100%; text-align: center;">Email</label>
                     </div>
                   </div>
+                  <div class="work-request--information">
+                    <div class="information-name" style="width: 100%;">
+                      <input id="text" type="text" spellcheck="false" style="text-align: center;">
+                      <label for="text" style="width: 100%; text-align: center;">Text</label>
+                    </div>
+                  </div>
+
                   <input type="submit" value="Send Request">
                 </form>
               </div>
@@ -166,7 +166,11 @@
     window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')
   </script>
   <script src="assets/js/functions-min.js"></script>
-
+  <script>
+    function myFunction() {
+      console.log("tetet");
+    }
+  </script>
 </body>
 
 </html>
