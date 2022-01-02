@@ -27,7 +27,12 @@ mongoose.connect(process.env.DB_CONNECTION,()=>{
     console.log("Connected to the DB");
 })
 //Start listening to the server
-app.listen(3000);
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 8000;
+}
+app.listen(port);
+
 app.get('/register',(req,res)=>{
     res.sendFile("register.html", { root: './home' })
 })
