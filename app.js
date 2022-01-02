@@ -19,6 +19,7 @@ app.use("/texts",textRoute);
 app.use(express.static("./home"));
 //ROUTES
 app.get('/',(req,res)=>{
+      console.log("Sending index");
       res.sendFile("./index.html");
 })
 
