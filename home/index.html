@@ -10,6 +10,7 @@
   <meta name="keywords" content="BeeSafe, template, html, sass, jquery">
   <meta name="author" content="Bucky Maler">
   <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="assets/img/logo2.png" href="/favicon.ico" />
 </head>
 
 <body>
@@ -17,7 +18,7 @@
   <!-- notification for small viewports and landscape oriented smartphones -->
   <div class="device-notification">
     <a class="device-notification--logo" href="#0">
-      <img src="assets/img/logo.png" alt="BeeSafe">
+      <img src="assets/img/logo2.png" alt="BeeSafe" style="width: 100px;">
       <p>BeeSafe</p>
     </a>
     <p class="device-notification--message">BeeSafe has so much to offer that we must request you orient your device to
@@ -31,7 +32,7 @@
         <div class="l-wrapper">
           <header class="header">
             <a class="header--logo" href="#0">
-              <img src="assets/img/logo.png" alt="BeeSafe">
+              <img src="assets/img/logo2.png" alt="BeeSafe" style="width: 150px; margin-left: -30px;">
               <p>BeeSafe</p>
             </a>
             <button class="header--cta cta">Contact Us</button>
@@ -85,6 +86,8 @@
                   beekeeper, how much honey he produces, etc.
                   Furthermore, as the project progresses, you will get one of the honey at home produced by the same
                   bees that you saved!
+                  <br><br>
+                  ATTENTION!!! At this moment the project is in alpha and it is not yet possible to register, however we will provide you with the promised page through a unique id sent by email (paypal)
                 </p>
                 <form action="https://www.paypal.com/donate" method="post" target="_top" style="margin:0 auto">
                   <input type="hidden" name="hosted_button_id" value="CCJDLD7JP2U7Q" />
@@ -124,23 +127,22 @@
             <li class="l-section section">
               <div class="hire">
                 <h2>Contact us</h2>
-                <!-- checkout formspree.io for easy form setup -->
-                <form class="work-request">
+                <form class="work-request" method="post">
                   <div class="work-request--options">
                   </div>
                   <div class="work-request--information">
                     <div class="information-name">
-                      <input id="name" type="text" spellcheck="false">
+                      <input id="name" type="text" spellcheck="false" name="name">
                       <label for="name" style="width: 100%; text-align: center;">Name</label>
                     </div>
                     <div class="information-email">
-                      <input id="email" type="email" spellcheck="false">
+                      <input id="email" type="email" spellcheck="false" name="mail">
                       <label for="email" style="width: 100%; text-align: center;">Email</label>
                     </div>
                   </div>
                   <div class="work-request--information">
                     <div class="information-name" style="width: 100%;">
-                      <input id="text" type="text" spellcheck="false" style="text-align: center;">
+                      <input id="text" type="text" spellcheck="false" style="text-align: center;" name="text">
                       <label for="text" style="width: 100%; text-align: center;">Text</label>
                     </div>
                   </div>
@@ -166,11 +168,6 @@
     window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')
   </script>
   <script src="assets/js/functions-min.js"></script>
-  <script>
-    function myFunction() {
-      console.log("tetet");
-    }
-  </script>
 </body>
 
 </html>
