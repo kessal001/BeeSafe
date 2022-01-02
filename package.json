@@ -2,9 +2,8 @@
   "name": "beesafe",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "nodemon app.js"
   },
   "author": "",
   "license": "ISC",
