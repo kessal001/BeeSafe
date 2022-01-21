@@ -7,3 +7,4 @@ The technologies used are:
 - Html / Css
 - Application Program Interface
 - Database
+- Paypal API
