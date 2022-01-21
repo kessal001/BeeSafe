@@ -58,8 +58,3 @@ app.post('/', function (req, res, next) {
   })
 });
 
-
-
-//todo Implement donation counter
-//todo Implement donation page
-//todo improve project structure
